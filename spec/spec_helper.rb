@@ -1,3 +1,5 @@
+# spec/spec_helper.rb
+
 # -*- coding: binary -*-
 
 # Enable legacy providers such as blowfish-cbc, cast128-cbc, arcfour, etc
@@ -11,6 +13,7 @@ require 'factory_bot'
 require 'rubocop'
 require 'rubocop/rspec/support'
 require 'faker'
+require 'rspec'  # Add this line
 
 ENV['RAILS_ENV'] = 'test'
 
@@ -208,3 +211,4 @@ def get_stderr(&block)
   end
   tmp.string
 end
+
